@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ejer2Propinas</string>
+    <string name="txt_how_was_the_service">How was the service?</string>
+    <string name="txt_firstButton">Amazing (20%)</string>
+    <string name="txt_secondButton">Good (18%)</string>
+    <string name="txt_thirdButton">Okay (15%)</string>
+    <string name="txt_firstInput">Cost of service</string>
+</resources>
