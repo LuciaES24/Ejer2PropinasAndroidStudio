@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">Ejer2Propinas</string>
-    <string name="txt_how_was_the_service">How was the service?</string>
-    <string name="txt_firstButton">Amazing (20%)</string>
-    <string name="txt_secondButton">Good (18%)</string>
-    <string name="txt_thirdButton">Okay (15%)</string>
-    <string name="txt_firstInput">Cost of service</string>
+    <string name="total">Total</string>
+    <string name="boton_calcular">Calcular</string>
+    <string name="coste_editText">Coste del servicio</string>
+    <string name="increible_button">Increíble (20%)</string>
+    <string name="bueno_button">Bueno (18%)</string>
+    <string name="normal_button">Normal (15%)</string>
+    <string name="redondear_pregunta">¿Quiere redondear el resultado?</string>
+    <string name="servicio_pregunta">¿Cómo fue el servicio?</string>
 </resources>

@@ -11,46 +11,71 @@
         android:id="@+id/first_input"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:hint="@string/coste_editText"
         android:inputType="numberDecimal"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:hint="@string/txt_firstInput">
-    </EditText>
+        app:layout_constraintTop_toTopOf="parent"></EditText>
 
     <TextView
         android:id="@+id/firstTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/txt_how_was_the_service"
+        android:text="@string/servicio_pregunta"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/first_input">
-    </TextView>
+        app:layout_constraintTop_toBottomOf="@id/first_input"></TextView>
 
     <RadioGroup
         android:id="@+id/firstRadioGroup"
-        android:checkedButton="@id/firstButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/firstTextView"
+        android:checkedButton="@id/firstButton"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        android:orientation="vertical">
+        app:layout_constraintTop_toBottomOf="@id/firstTextView">
 
         <RadioButton
             android:id="@+id/firstButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txt_firstButton" />
+            android:text="@string/increible_button"></RadioButton>
 
         <RadioButton
             android:id="@+id/secondButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txt_secondButton" />
+            android:text="@string/bueno_button"></RadioButton>
 
         <RadioButton
             android:id="@+id/thirdButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txt_thirdButton" />
+            android:text="@string/normal_button"></RadioButton>
     </RadioGroup>
+
+    <Switch
+        android:id="@+id/firstSwitch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/redondear_pregunta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/firstRadioGroup"
+        app:layout_constraintTop_toBottomOf="@id/firstRadioGroup"></Switch>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstSwitch"></Button>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCalculate"></TextView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
